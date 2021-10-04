@@ -85,8 +85,7 @@ func Detail() http.HandlerFunc {
 
 		}
 
-		var data map[string]interface{}
-		data = map[string]interface{}{
+		var data map[string]interface{} = map[string]interface{}{
 			"Username": user,
 			"Follower": follow,
 		}
